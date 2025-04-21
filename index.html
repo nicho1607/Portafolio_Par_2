@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- SECCIÓN HEAD -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Nicolás Castañeda | Programador</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-label {
+            color: white !important;
+        }
+    </style>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- SECCIÓN HEADER -->
+<header class="sticky-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <h1 class="mb-2 mb-md-0">Nicolás Castañeda</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link active" data-target="perfil">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" data-target="proyectos">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" data-target="contacto">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" id="verTodo">Ver todo</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- SECCIÓN PERFIL -->
+    <div class="section" id="perfil">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center text-center text-md-start">
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <img src="./image/perfil.jpg" alt="Foto de perfil" class="img-fluid rounded-circle" />
+            </div>
+            <div class="col-12 col-md-8">
+                <h2 class="mb-4">Ingeniero Informático en Formación</h2>
+                <p class="lead">
+                    Soy Nicolás Castañeda, un apasionado de la tecnología, el desarrollo web y la arquitectura del software.
+                </p>
+                <p>
+                    Actualmente curso Ingeniería Informática en la Universidad Unilasallista, donde combino conocimientos teóricos con aplicación práctica. Mi enfoque va más allá de escribir código - busco crear soluciones que impacten positivamente en los usuarios.
+                </p>
+                <div class="mt-4">
+                    <h3>Formación Académica</h3>
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h4 class="card-title">Ingeniería de Informática</h4>
+                            <p class="card-text">Universidad Unilasallista - En progreso</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills mt-4">
+                    <h3>Lenguajes de programación</h3>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <span class="badge bg-primary"><i class="fab fa-js me-1"></i> JavaScript</span>
+                        <span class="badge bg-primary"><i class="fab fa-python me-1"></i> Python</span>
+                        <span class="badge bg-primary"><i class="fas fa-code me-1"></i> C#</span>
+                        <span class="badge bg-primary"><i class="fab fa-html5 me-1"></i> HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="interests mt-4">
+                    <h3>Áreas de Interés</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-chevron-right text-primary me-2"></i> Desarrollo Web</li>
+                        <li><i class="fas fa-chevron-right text-primary me-2"></i> Inteligencia Artificial</li>
+                        <li><i class="fas fa-chevron-right text-primary me-2"></i> Base de Datos</li>
+                        <li><i class="fas fa-chevron-right text-primary me-2"></i> Arquitectura del Software</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN PROYECTOS -->
+    <div class="section" id="proyectos" style="display: none;">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4">Proyectos Destacados</h2>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Sistema de Gestión para Guardería Canina "El Paraíso"</h3>
+                        <p class="card-text">
+                            Aplicación web diseñada para automatizar procesos como el registro de clientes, la gestión de reservas de mascotas y la generación de facturas. 
+                            Desarrollado con enfoque en eficiencia operativa y experiencia de usuario.
+                        </p>
+                        <p><strong>Tecnologías utilizadas:</strong> 
+                            <span class="badge bg-secondary">HTML</span>
+                            <span class="badge bg-secondary">CSS</span>
+                            <span class="badge bg-secondary">JavaScript</span>
+                            <span class="badge bg-secondary">Python</span>
+                        </p>
+                        <p class="text-muted">Proyecto en desarrollo</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Más proyectos próximamente...</h3>
+                        <p class="card-text">Actualmente trabajando en nuevos desarrollos que pronto estarán disponibles aquí.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN CONTACTO -->
+    <div class="section" id="contacto" style="display: none;">
+        <div class="row">
+            <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                <h2 class="mb-4">Contáctame</h2>
+                <p class="lead">¿Interesado en colaborar o tienes alguna pregunta?</p>
+                <div class="card mt-4 bg-dark text-white">
+                    <div class="card-body">
+                        <h3 class="card-title">Información de Contacto</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="fas fa-envelope text-primary me-2"></i>
+                                <strong class="contact-label">Email:</strong> <a href="mailto:nicolacho1607@gmail.com" class="text-white">nicolacho1607@gmail.com</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-phone text-primary me-2"></i>
+                                <strong class="contact-label">Celular:</strong> <a href="tel:+573016502900" class="text-white">+57 301 650 2900</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fab fa-github text-primary me-2"></i>
+                                <strong class="contact-label">GitHub:</strong> <a href="https://github.com/nicho1607?tab=repositories" target="_blank" class="text-white">github.com/nicho1607</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- SECCIÓN FOOTER -->
+<footer class="text-center mt-5 p-3 bg-light">
+    <p class="mb-0">&copy; 2025 Nicolás Castañeda. Todos los derechos reservados.</p>
+</footer>
+
+<!-- SECCIÓN SCRIPTS -->
+<script src="./js/bootstrap.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const secciones = document.querySelectorAll(".section");
+        const enlaces = document.querySelectorAll("header a.nav-link:not(#verTodo)");
+        const verTodoBtn = document.getElementById("verTodo");
+
+        function mostrarSeccion(id) {
+            secciones.forEach(sec => sec.style.display = 'none');
+            const seccion = document.getElementById(id);
+            if (seccion) seccion.style.display = 'block';
+
+            enlaces.forEach(enlace => {
+                enlace.classList.toggle('active', enlace.getAttribute('data-target') === id);
+            });
+        }
+
+        function mostrarTodasLasSecciones() {
+            secciones.forEach(sec => sec.style.display = 'block');
+            enlaces.forEach(enlace => enlace.classList.remove('active'));
+        }
+
+        enlaces.forEach(enlace => {
+            enlace.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = this.getAttribute('data-target');
+                mostrarSeccion(target);
+            });
+        });
+
+        verTodoBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            mostrarTodasLasSecciones();
+        });
+
+        mostrarSeccion('perfil');
+    });
+</script>
+
+</body>
+</html>
